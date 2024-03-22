@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Peso no Espaço</title>
+</head>
+<ul class="menu">
+    <!-- Itens do menu -->
+    <li><a href="index.html">lua</a></li>
+    <li><a href="universo.html">universo</a></li>
+    <li><a href="planetas.html">planetas</a></li>
+    <li><a href="calculadoraEspaco.html">calculadora/a></li>
+</ul>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Calculadora de Peso no Espaço</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="pesoOriginal">Peso na Terra (em kg):</label>
+                <input type="number" class="form-control" id="pesoOriginal" required>
+            </div>
+
+            <div class="form-group">
+                <label for="planeta">Escolha um planeta:</label>
+                <select class="form-control" id="planeta">
+                    <option value="lua">Lua</option>
+                    <option value="marte">Marte</option>
+                    <option value="sol">Sol</option>
+                    <option value="plutao">Plutão</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="calcularPeso()">Calcular Peso</button>
+        </form>
+
+        <div id="resultado" class="mt-4"></div>
+    </div>
+
+    <script src="calcularPeso.js"></script>
+</body>
+
+</html>
